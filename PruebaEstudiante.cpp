@@ -19,8 +19,8 @@ void PruebaEstudiante::testConstructorEstudiante()
     Estudiante estudiante(e_Nombre, e_Numero);
 
     // Verification
-    CPPUNIT_ASSERT_EQUAL(e_Nombre, estudiante.obtenerNombreEstudiante());
-    CPPUNIT_ASSERT_EQUAL(e_Numero, estudiante.obtenerNumeroEstudiante());
+    CPPUNIT_ASSERT(e_Nombre == estudiante.obtenerNombreEstudiante());
+    CPPUNIT_ASSERT(e_Numero == estudiante.obtenerNumeroEstudiante());
 }
 
 void PruebaEstudiante::testAsignarCalificacion()
